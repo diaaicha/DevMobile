@@ -134,17 +134,18 @@ final routerProvider = Provider<GoRouter>((ref) {
               ),
             ],
           ),
+         StatefulShellBranch(
+          routes: [
+           GoRoute(
+            path: '/parametres',
+            name: 'parametres',
+            builder: (context, state) => const ParametresScreen(),
+            ),
+           ],
+          ),
         ],
       ),
-
-
-      GoRoute(
-        path: '/parametres',
-        name: 'parametres',
-        builder: (context, state) => const ParametresScreen(),
-      ),
-
-      GoRoute(
+          GoRoute(
         path: '/confirmation_support',
         name: 'confirmation_support',
         builder: (context, state) => const ConfirmationSupportScreen(),

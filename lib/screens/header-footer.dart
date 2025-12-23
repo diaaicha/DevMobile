@@ -23,7 +23,8 @@ class _HeaderScreenState extends State<HeaderScreen> {
     "Catégories",
     "Messages",
     "Panier",
-    "Profil"
+    "Profil",
+    "paramétres"
   ];
 
   void _onItemTapped(int index) {
@@ -72,6 +73,10 @@ class _HeaderScreenState extends State<HeaderScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
             label: "Profil",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: "Paramétres",
           ),
         ],
       ),
