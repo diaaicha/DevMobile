@@ -89,14 +89,7 @@ class CategorieScreen extends ConsumerWidget {
         ),
       ),
 
-      /// Floating Action Button pour signaler/ajouter
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          context.go('/report');
-        },
-        backgroundColor: const Color(0xFF226D68),
-        child: const Icon(Icons.add),
-      ),
+
     );
   }
 }
